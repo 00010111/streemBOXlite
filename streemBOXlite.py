@@ -11,7 +11,7 @@ from sys import platform
 import csv,json,pprint
 import copy
 
-version = '0.0050'
+version = '0.0051'
 s_path = u_path = ''
 s_path_local_cache = ''
 s_path_user = "%SYSTEMDRIVE%\\Users\$REPLACE$\\"
@@ -184,6 +184,7 @@ def writeCSV(entries,outputdir,filename,l_short):
 #Parameter: entries dict containing on parsed and enritched streemfs.db 
 #Parameter: outputdir file will be written to this dir, if this parameter is empty the file will be written in current working directory
 #Parameter: filename output file name
+#FIXME: does not work with -outputdir
 def writeJSON(entries,outputdir,filename):
 	if len(outputdir) > 0:
 		# test if dir exists
@@ -208,9 +209,11 @@ def writeJSON(entries,outputdir,filename):
 	if verbose:
 		print("Writing json resultfile to:")
 		print(os.path.abspath(jsonfile.name))
-	with open(filename, "w") as outfile:
-		for k,v in entries.items():
-			json.dump(v, outfile)
+	for k,v in entries.items():
+		json.dump(v, jsonfile)
+#	with open(filename, "w") as outfile:
+#		for k,v in entries.items():
+#			json.dump(v, outfile)
 	
 
 #function creats the dict representing the sort output format

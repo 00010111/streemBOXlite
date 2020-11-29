@@ -57,5 +57,7 @@ python3 ./streemBOXlite.py -p ./evidence/box/data/ -s
 * contact me via twitter
 
 ## Change History
+ * Version 0.0051:
+    * fix writing json file
  * Version 0.0050:
     * initial release
