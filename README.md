@@ -44,8 +44,9 @@ python3 ./streemBOXlite.py -p ./evidence/box/data/ -s
 ```
 
 ## Author
-* Twitter: [@b00010111](https://twitter.com/b00010111)
+* Mastodon: [@b00010111](https://ioc.exchange/@b00010111)
 * Blog: https://00010111.at/
+* Twitter: [@b00010111](https://twitter.com/b00010111)
 
 ## License
 * Free to use, reuse and redistribute for everyone.
@@ -54,7 +55,8 @@ python3 ./streemBOXlite.py -p ./evidence/box/data/ -s
 
 ## Bugs, Discussions, Feature requests, contact
 * open an issue
-* contact me via twitter
+* contact me via Mastodon
+* (reaching out via Twitter doesn't really work well anymore...sorry)
 
 ## Change History
  * Version 0.0051:
